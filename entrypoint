@@ -1,0 +1,5 @@
+#!/bin/sh
+
+echo "$SCHEDULE" | crontab -
+
+crond -f -L /dev/stdout -d
